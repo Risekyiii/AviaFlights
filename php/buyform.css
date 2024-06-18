@@ -1,0 +1,202 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: "Oswald", sans-serif;
+	color: white;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background: rgb(40, 40, 40);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*, *::before, *::after{
+	box-sizing: inherit;
+}
+
+
+hr{
+	height: 5px;
+	margin: 30px auto;
+	background-color: rgb(32, 107, 110);
+	border: 0px;
+}
+.container{
+	max-width: 800px;
+	margin: auto;
+	
+}
+.main-heading {
+	font-family: "Oswald", sans-serif;
+	font-weight: 600;
+	font-size: large;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	column-gap: 5px;
+}
+.passenger {
+	width: 50px;
+}
+.form {
+	padding: 15px 25px;
+	border: double 5px rgb(32, 107, 110);
+}
+.person-radio{
+	display: inline-block;
+}
+.person-radio input[type=radio]{
+	display: none;
+}
+.person-radio label{
+	display: inline-block;
+	cursor: pointer;
+	padding: 10px;
+	line-height: 13px;
+	border: 1px solid rgb(146, 145, 145);
+	border-radius: 50%;
+	color: rgb(244, 155, 82);
+	background-color: rgb(255, 255, 255);
+	font-weight: 600;
+}
+.person-radio input[type=radio]:checked + label {
+	background: rgb(244, 155, 82);
+	border: 1px solid rgb(244, 155, 82);
+	color: white;
+}
+.person-info{
+	margin-bottom: 40px;
+}
+.person-info, .document-info{
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+span{
+	color: rgb(248, 83, 18);
+}
+.person-data h3{
+	font-size: 16px;
+	margin-bottom: 10px;
+	color: white;
+}
+.person-data input[type=text], input[type=date]{
+	height: 30px;
+	font-size: 14px;
+}
+.document-h2 {
+	font-size: 25px;
+	color: rgb(32, 107, 110);
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	column-gap: 5px;
+	margin-bottom: 40px;
+}
+.document-h2 img{
+	width: 20px;
+	height: 20px;
+}
+.form-h2 {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.star{
+	color: white;
+	margin-bottom: 40px;
+}
+.confirmig-text {
+	padding-left: 55px;
+	margin-bottom: 40px;
+}
+.checkbox-cont {
+	padding-left: 55px;
+}
+
+input{
+	margin: 0;
+}
+.checkbox-cont {
+}
+.main-input{
+	margin-bottom: 15px;
+}
+.main-label{
+	font-weight: 600;
+	font-size: 17px;
+	color: white;
+}
+.checboxes {
+	color: white;
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+	padding-left: 15px;
+}
+
+.cont-hidden{
+	transform: translateY(-100%);
+	display: none;
+}
+.button-next{
+    background: none;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid #e7800a;
+    padding: 14px 10px;
+    outline: none;
+    color: white;
+    border-radius: 2px;
+    transition: 0.25s;
+    cursor: pointer;
+    
+    
+}
+.button-next:hover{
+    background: #e7800a;
+}
+
+@media screen and (max-width:720px) {
+	.container{
+		margin: 0 15px;
+	}
+	.person-info, .document-info{
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+}

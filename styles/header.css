@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    text-transform: capitalize;
+}
+
+:root {
+    --white: #ffffff;
+    --white-blue: #c4c4c4;
+    --gradient: linear-gradient(45deg, var(--white), var(--white-blue));
+    --box-shadow: 0 .5rem 1rem rgba(5, 5, 5, 0.5);
+
+}
+html {
+    font-size: 70%;
+}
+header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: rgb(40, 40, 40);
+    box-shadow: var(--box-shadow);
+    padding: 1.3rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+header .logo {
+    font-size: 3rem;
+    color: var(--white);
+    transition: 0.5s;
+}
+header .logo span {
+    color: var(--white-blue);
+}
+
+header .logo:hover {
+    transform: scale(1.2);
+
+}
+
+.navbar{
+    display: flex;
+}
+
+header .navbar a{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: var(--white); 
+    transition: 0.5s;
+    
+}
+header .navbar a:hover {
+    color: var(--white);
+
+}
+
+header input {
+    display: none;
+}
+
+header label{
+    font-size: 3rem;
+    color: var(--white);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 1;
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 770px) {
+    header label {
+        visibility: visible;
+        opacity: 1;
+    }
+        header .navbar {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background: rgb(40, 40, 40);
+            border-top: .1rem solid rgba(0,0,0,0.1);
+            box-shadow: var(--box-shadow);
+            transform-origin: top;
+            transform: scaleY(0);
+            opacity: 0;
+            font-size: 9px;
+            display: flex; /* Added */
+            flex-direction: column; /* Added */
+            padding: 10px; /* Removed */
+        }
+    
+        header .navbar a {
+            display: block;
+            margin: 1rem 0; /* Added vertical margin */
+            margin-left: 0; /* Added to remove left margin */
+            font-size: 2rem;
+            color: var(--white);
+            transition: 0.5s;
+        }
+    
+        header input:checked ~ .navbar {
+            transform: scaleY(1);
+            opacity: 1;
+        }
+}
+
+

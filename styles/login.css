@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 150%;
+    
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    background-color: black;
+}
+.about{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 700px;
+    height: 500px;
+    padding: 40px;
+    padding-bottom: 40px;
+    margin-left: 4%;
+    margin-right: 2%;
+    position: relative;
+    background: rgba(18, 18, 18, 0.8);
+    text-align: justify;
+    flex: 1 1 700px;
+    margin-top: 200px;
+   
+}
+.about h1{
+    color: white;
+    align-self: center;
+    text-transform: uppercase;
+    margin: 15px;
+}
+.about p{
+    margin: 0px;
+    margin-right: -20px;
+    padding: 0px;
+    color: white;
+    font-weight: 500;
+}
+.about div{
+    align-self: center;
+    width: 700px;
+    height: 350px;
+    flex: 1;
+}
+.text{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.text div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.text img{
+    margin-right: 30px;
+    margin-left: -25px;
+    width: 180px;
+    height: 240px;
+    border: 5px solid black;
+}
+.form{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+    text-align: center;
+    margin: 200px auto 0 auto;
+    padding-bottom: 400px;
+    
+}
+.form h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0px;
+}
+.form input[type = "text"],.form input[type = "password"]{
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid white;
+    padding: 14px 10px;
+    width: 260px;
+    outline: none;
+    color: black;
+    border-radius: 2px;
+    transition: 0.25s;
+}
+.form input::placeholder{
+    color: rgba(255, 255, 255, 0.7 );
+}
+.form input[type = "text"]:focus,.form input[type = "password"]:focus{
+    width: 280px;
+    border-color: #2e2e2e;
+}
+.send_login{
+    border:0;
+    background: none;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid #e7800a;
+    padding: 14px 0;
+    outline: none;
+    color: white;
+    border-radius: 2px;
+    transition: 0.25s;
+    cursor: pointer;
+    width: 150px;
+}
+.send_login:hover{
+    background: #e7800a;
+}
+.send_register{
+    border:0;
+    background: none;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid #e7800a;
+    padding: 14px 0;
+    outline: none;
+    color: white;
+    border-radius: 2px;
+    transition: 0.25s;
+    cursor: pointer;
+    width: 150px;
+}
+.send_register:hover{
+    background: #e7800a;
+}
+.content{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 10;
+    overflow: hidden;
+    
+}
+
+.video_content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    margin-top: 60px;
+}

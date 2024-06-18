@@ -1,0 +1,15 @@
+footer {
+    background: rgb(40, 40, 40);
+    padding: 1.3rem 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 100;
+    
+    
+}
+footer p{
+    font-size: 18px;
+    color: white;
+    
+}
